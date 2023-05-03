@@ -7,11 +7,17 @@ import Coords from './components/Coords.vue';
 import Humidity from './components/Humidity.vue';
 
 const city = ref('Paris')
+
 const weatherInfo = ref(null)
 function getWeather() {
   fetch(`${BASE_URL}?q=${city.value}&units=metric&appid=${API_KEY}`)
-    .then((response) => response.json())
-    .then((data) => weatherInfo.value = data)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Запрос не прошел');
+    } return response.json();
+  })
+  .then((data) => weatherInfo.value = data)
+  .catch((error) => console.log(error.message));
 }
 
 onMounted(getWeather)
@@ -32,12 +38,12 @@ onMounted(getWeather)
               </div>
             </section>
             <section class="section section-right">
-              <Highlights :weatherInfo="weatherInfo"/>
+              <Highlights :weatherInfo="weatherInfo" />
             </section>
           </div>
           <div v-if="weatherInfo?.weather" class="sections">
             <Coords :coord="weatherInfo.coord" />
-            <Humidity :humidity="weatherInfo.main.humidity"/>
+            <Humidity :humidity="weatherInfo.main.humidity" />
           </div>
         </div>
       </div>
