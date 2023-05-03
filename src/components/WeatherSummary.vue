@@ -28,11 +28,7 @@ const today = new Date().toLocaleString('en-EN', {
     </div>
     <div class="date text-block">{{ today }}</div>
   </div>
-  <div v-else class="summary">
-    <p>
-      Не корректно введено название города
-    </p>
-  </div>
+
 </template>
 
 <style lang="sass" scoped>
