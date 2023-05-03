@@ -10,7 +10,8 @@ Forecast is a weather app that provides information about weather conditions, wi
 
 ## Technologies
 
-- React Native Framework
+- Vue.js
+- Composition API
 - OpenWeather API
 
 ## Installation
