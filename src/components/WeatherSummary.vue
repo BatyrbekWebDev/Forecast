@@ -28,7 +28,6 @@ const today = new Date().toLocaleString('en-EN', {
     </div>
     <div class="date text-block">{{ today }}</div>
   </div>
-
 </template>
 
 <style lang="sass" scoped>
