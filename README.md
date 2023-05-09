@@ -1,3 +1,6 @@
+![image](https://github.com/BatyrbekWebDev/Forecast/assets/43727077/457722e0-9a1e-4bd5-a223-75eb35ebf750)
+
+
 # Forecast
 
 Forecast is a weather app that provides information about weather conditions, wind, pressure, and sunrise/sunset time for a specific location.
