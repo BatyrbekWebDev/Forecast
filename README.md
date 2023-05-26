@@ -1,14 +1,17 @@
+![image](https://github.com/BatyrbekWebDev/Forecast/assets/43727077/457722e0-9a1e-4bd5-a223-75eb35ebf750)
+
+
 # Forecast
 
-Forecast is a weather app that provides information about weather conditions, wind, pressure, and sunrise/sunset time for a specific location.
+Forecast - это погодное приложение, которое предоставляет информацию о погодных условиях, ветре, давлении и времени восхода / захода солнца в определенном месте.
 
-## Features
+## Особенности
 
-- View current weather data for a specific location
-- View weather forecast for a specific period of time
-- Information about wind, pressure, sunrise/sunset time for the current location
+- Просмотр текущих данных о погоде для определенного местоположения
+- Просмотр прогноза погоды на определенный период времени
+- Информация о ветре, давлении, времени восхода /захода солнца для текущего местоположения
 
-## Technologies
+## Технологии
 
 - Vue.js
 - Composition API
