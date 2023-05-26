@@ -2,6 +2,7 @@
   "name": "forecast",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://BatyrbekWebDev.github.io/Forecast",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
